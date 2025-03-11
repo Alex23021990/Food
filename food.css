@@ -292,3 +292,109 @@ body {
   text-align: center;
   color: #5ab963;
 }
+
+/* /food */
+
+/* last section */
+
+.last-section {
+  margin-top: 160px;
+}
+.last-link {
+  position: relative; /* Додаємо позиціонування для правильного розташування псевдоелемента */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5ab963;
+  display: inline-block; /* Щоб елемент займав місце по контенту */
+  padding-right: 11px; /* Додаємо простір для лінії */
+}
+
+.last-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Розміщуємо псевдоелемент після тексту */
+  transform: translateY(-50%); /* Центруємо по вертикалі */
+  width: 30px;
+  height: 2px;
+  background: #5ab963;
+  border: 1px dashed #5ab963;
+}
+
+.last-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+  width: 585px;
+  height: 111px;
+}
+
+.cont-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.last-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* /last section */
+
+/* footer */
+
+.cont-ftr {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 120px;
+}
+.ftr-container {
+  margin-top: 120px;
+}
+.ftr-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.cont-li {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+.cont-li-first {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+.cont-li-free {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+}
+.menu-ftr {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.ftr {
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  height: 399px;
+  background: #0a0e1a;
+}
+.ftr-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
